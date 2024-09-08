@@ -53,6 +53,11 @@ export async function generateMetadata({
       description: data.desc,
       images: [openGraphImage],
     },
+    twitter: {
+      title: data.title,
+      description: data.desc,
+      images: [openGraphImage],
+    },
   };
 }
 
