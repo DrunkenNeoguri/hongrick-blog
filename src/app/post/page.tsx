@@ -11,17 +11,16 @@ async function fetchOpenGraphImageURL(id: string) {
     throw new Error("Failed to fetch OG image");
   }
 
+  // // 문제 받았더니 nodedata로 받아온다.
   const imageBlob = await response.blob();
-  const imageUrl = URL.createObjectURL(imageBlob);
+  const imageURL = URL.createObjectURL(imageBlob);
 
-  return imageUrl;
+  return imageURL;
 }
 
 export async function generateMetadata({
-  params,
   searchParams,
 }: {
-  params: { id: string };
   searchParams: { id: string };
 }) {
   const firestore = getFirestore(firebase);
@@ -41,17 +40,17 @@ export async function generateMetadata({
     desc: string;
   };
 
-  const openGraphImage = fetchOpenGraphImageURL(searchParams.id);
+  const openGraphImage = await fetchOpenGraphImageURL(searchParams.id);
 
   return {
     title: data.title || "코딩 입문자를 위한 VSCode 꿀팁 10가지",
     description:
       data.desc ||
       "코딩 할 때 많이 쓰게 되는 IDE인 VSCode와 관련하여 유용하게 쓸 수 있는 꿀팁 10가지를 준비했습니다.",
-    openGraphImage: {
+    openGraph: {
       title: data.title,
       description: data.desc,
-      images: [openGraphImage],
+      images: openGraphImage,
     },
     twitter: {
       card: "summary",
@@ -59,7 +58,7 @@ export async function generateMetadata({
       description:
         data.desc ||
         "코딩 할 때 많이 쓰게 되는 IDE인 VSCode와 관련하여 유용하게 쓸 수 있는 꿀팁 10가지를 준비했습니다.",
-      images: openGraphImage,
+      image: openGraphImage,
     },
   };
 }
