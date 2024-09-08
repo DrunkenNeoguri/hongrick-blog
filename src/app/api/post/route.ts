@@ -21,7 +21,7 @@ export async function GET(request: Request) {
   const data = getDocState.data() as {
     title: string;
     desc: string;
-    video: string;
+    link: string;
   };
 
   const ogImage = await OpenGraphImage({

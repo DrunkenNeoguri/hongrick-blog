@@ -21,7 +21,7 @@ export default function Redirect() {
           return;
         }
 
-        const videoType = getDocState.data().video;
+        const videoType = getDocState.data().link;
 
         return videoType === "rick"
           ? router.push("https://youtu.be/dQw4w9WgXcQ")
