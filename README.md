@@ -1,36 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 👢 Rick Rolling / Hong Lola Vending Machine 🛼
 
-## Getting Started
+---
 
-First, run the development server:
+최근 Kinky Boots에서 강홍석 배우의 Land Of Lola를 보던 중에 홍롤라, 홍롤라 하면서 입에 착착 감기다가 문득 롤이라는 글자가 Rick Rolling처럼 착 달라붙어서 이것도 Rick Rolling같이 만들면 어떨까 싶어 프로젝트를 제작해봤습니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 소요 시간: 6시간
+- 기술 스택
+  - Vercel
+  - Next.js 14 App Router
+  - Satori
+  - sharp
+  - tailwindcss
+  - firebase
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+자세한 글은 후추에 담겠습니다.
