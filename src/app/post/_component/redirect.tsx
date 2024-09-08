@@ -25,7 +25,7 @@ export default function Redirect() {
 
         return videoType === "rick"
           ? router.push("https://youtu.be/dQw4w9WgXcQ")
-          : router.push("https://youtu.be/dQw4w9WgXcQ");
+          : router.push("https://youtu.be/Z22JuE3b2is");
       };
       redirectYoutubeVideo();
     }

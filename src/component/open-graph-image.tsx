@@ -1,9 +1,9 @@
 import satori from "satori";
 
 const suite = () =>
-  fetch(new URL("http://localhost:3000/font/SUIT-Medium.otf")).then((res) =>
-    res.arrayBuffer()
-  );
+  fetch(
+    new URL(`${process.env.NEXT_PUBLIC_BASE_URL}/font/SUIT-Medium.otf`)
+  ).then((res) => res.arrayBuffer());
 
 // const fontPromise = fetch(
 //   new URL("../../styles/opensans.ttf", import.meta.url)
@@ -88,7 +88,7 @@ export default async function OpenImageGraph({
         >
           <img
             alt=""
-            src="http://localhost:3000/icon-image.png"
+            src={`${process.env.NEXT_PUBLIC_BASE_URL}/icon-image.png`}
             style={{ width: 32, height: 32 }}
           />
           <span>HongLick Blog</span>

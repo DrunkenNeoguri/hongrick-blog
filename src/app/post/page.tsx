@@ -3,7 +3,9 @@ import { doc, getDoc, getFirestore } from "firebase/firestore";
 import Redirect from "./_component/redirect";
 
 async function fetchOpenGraphImageURL(id: string) {
-  const response = await fetch(`http://localhost:3000/api/post?id=${id}`);
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/post?id=${id}`
+  );
 
   if (!response.ok) {
     throw new Error("Failed to fetch OG image");
