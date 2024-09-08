@@ -54,9 +54,12 @@ export async function generateMetadata({
       images: [openGraphImage],
     },
     twitter: {
-      title: data.title,
-      description: data.desc,
-      images: [openGraphImage],
+      card: "summary",
+      title: data.title || "코딩 입문자를 위한 VSCode 꿀팁 10가지",
+      description:
+        data.desc ||
+        "코딩 할 때 많이 쓰게 되는 IDE인 VSCode와 관련하여 유용하게 쓸 수 있는 꿀팁 10가지를 준비했습니다.",
+      images: openGraphImage,
     },
   };
 }
