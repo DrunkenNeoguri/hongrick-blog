@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  webpack: (config) => ({
+    ...config,
+    externals: [
+      ...config.externals,
+      {
+        sharp: "commonjs sharp",
+      },
+    ],
+  }),
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
