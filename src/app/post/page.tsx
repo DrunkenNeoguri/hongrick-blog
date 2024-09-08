@@ -43,6 +43,7 @@ export async function generateMetadata({
   const openGraphImage = await fetchOpenGraphImageURL(searchParams.id);
 
   return {
+    metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
     title: data.title || "코딩 입문자를 위한 VSCode 꿀팁 10가지",
     description:
       data.desc ||
