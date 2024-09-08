@@ -6,11 +6,11 @@
 
 - 소요 시간: 6시간
 - 기술 스택
-  - Vercel
-  - Next.js 14 App Router
-  - Satori
-  - sharp
-  - tailwindcss
-  - firebase
+  - [Vercel](https://vercel.com)
+  - [Next.js 14 App Router](https://nextjs.org/docs/app)
+  - [Satori](https://github.com/vercel/satori)
+  - [sharp](https://sharp.pixelplumbing.com/)
+  - [Tailwind Css](https://tailwindcss.com/docs/installation)
+  - [firebase](https://firebase.google.com/)
 
 ## 자세한 글은 후추에 담겠습니다.
